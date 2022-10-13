@@ -17,6 +17,5 @@ use App\Http\Controllers\ProductController;
 Route::prefix('v1')->controller(ProductController::class)->group(function () {
 Route::get('/', function () {return "hello";});
 Route::get('/products', 'index');
-Route::get('/products/{cat}', 'products');
 });
 
